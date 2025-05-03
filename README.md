@@ -1,5 +1,3 @@
-# DL_improc_hw1
-
 # Building Segmentation with U-Net
 
 This repository implements semantic segmentation for automatically extracting building footprints from aerial images. The implementation uses the U-Net convolutional network architecture [(Ronneberger et al. 2015)](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) to map input images to pixel-wise building/non-building predictions.
