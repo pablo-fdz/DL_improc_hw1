@@ -1,6 +1,6 @@
 # Building Segmentation with U-Net
 
-This repository implements semantic segmentation for automatically extracting building footprints from aerial images. The implementation uses the U-Net convolutional network architecture [(Ronneberger et al. 2015)](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) to map input images to pixel-wise building/non-building predictions.
+This repository implements semantic segmentation for automatically extracting building footprints from aerial images, sourced from [Minh (2013)](http://www.cs.toronto.edu/~vmnih/data/). The implementation uses the U-Net convolutional network architecture [(Ronneberger et al. 2015)](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) to map input images to pixel-wise building/non-building predictions.
 
 ## Repository Structure
 
@@ -36,9 +36,9 @@ The implementation uses a U-Net architecture with the following features:
 - Decoder path with skip connections from the encoder
 - Dropout regularization (p=0.1)
 - Binary segmentation output (building vs. non-building)
-- BCEWithLogitsLoss with class weighting to handle imbalance
+- `BCEWithLogitsLoss` with class weighting to handle imbalance
 
-![U-Net model](https://www.dropbox.com/scl/fi/wgvqiix6scbm1c983ephk/segmentation_model.jpg?rlkey=71blfq7cm1yzw26puu4l0ybhs&dl=1)
+![U-Net model](unet_diagram.jpg)
 
 ## Training Details
 
